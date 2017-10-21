@@ -1,0 +1,22 @@
+<!-- app/semesters/new.html.erb -->
+<div class="modal-body">
+    <%= simple_form_for @students, :url => 'startup/create', :action => 'create', :method => 'post' do |f| %>
+
+        <div class="form-group">
+            <%= f.input :name, input_html: { class: 'form-control' } %>
+        </div>
+        <div class="form-group">
+            <%= f.input :secondname %>
+        </div>
+        <div class="form-group">
+            <%= f.input :university %>
+        </div>
+        <div class="form-group">
+            <%= f.input :programingway %>
+        </div>
+        <div class="modal-footer">
+            <%= f.button :submit %>
+        </div>
+
+</div>
+<% end %>

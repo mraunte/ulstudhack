@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ulsuhack</title>
+    <%= stylesheet_link_tag    'application', "main", media: 'all', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+            <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css">
+            <script src="https://use.fontawesome.com/954bd4bc0e.js"></script>
+            <script src="/assets/inputText.js"></script>
+            <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+            <link href="/assets/grayscale.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">ULStudHack</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#masthead">Что это такое ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#download">Где проходит?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#registration">Как принять учатие?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#shedule">Расписание</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Спонсоры</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <%= yield %>
+        <footer>
+            <div class="container text-center">
+                <p>
+                    Created by Pavel Sherbinin
+                    <br>
+                    Powered by ULSU
+                </p>
+            </div>
+        </footer>
+        <script src="/assets/jquery.min.js"></script>
+        <script src="/assets/popper.min.js"></script>
+        <script src="/assets/bootstrap.min.js"></script>
+        <script src="/assets/jquery.easing.min.js"></script>
+        <script src="/assets/grayscale.min.js"></script>
+</body>
+
+</html>
